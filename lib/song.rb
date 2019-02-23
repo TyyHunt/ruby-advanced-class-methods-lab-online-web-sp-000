@@ -54,5 +54,14 @@ class Song
     song.name = song_array[1]
     song.artist_name = song_array[0]
     song
+  end
+re
+  def self.create_from_filename(file)
+    result = self.new_from_filename(file)
+    song = self.create 
+    song.name = result.name
+    song.artist_name = result.artist_name
+    song
+  end
 
 end
